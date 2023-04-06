@@ -40,3 +40,8 @@
 -- +-------------------------------+------------------+
 
 
+SELECT distinct name, avg(wins) as avg_wins
+FROM teams
+WHERE year >= 2001
+GROUP BY name
+ORDER BY name;
